@@ -29,4 +29,18 @@ const vowelsCount = (word) => {
   return totalVowels;
 };
 const res2 = vowelsCount("programming");
-console.log(res2);
+// console.log(res2);
+
+// problem-3 ==>  Check for Palindrome
+const palindrome = (str) => {
+  let rev = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    rev += str[i];
+  }
+  if (str === rev) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+palindrome("madam");
