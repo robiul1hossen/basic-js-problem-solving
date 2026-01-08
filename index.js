@@ -43,4 +43,17 @@ const palindrome = (str) => {
     console.log(false);
   }
 };
-palindrome("madam");
+// palindrome("madam");
+
+// problem-4 ==>  Find the Maximum Number
+const maxNum = (numbers) => {
+  let max = numbers[0];
+  for (let num of numbers) {
+    if (num > max) {
+      max = num;
+    }
+  }
+  return max;
+};
+const res4 = maxNum([1, 2, 6, 9, 7, 65]);
+// console.log(res4);
