@@ -57,3 +57,17 @@ const maxNum = (numbers) => {
 };
 const res4 = maxNum([1, 2, 6, 9, 7, 65]);
 // console.log(res4);
+
+// problem-5 ==> Remove Duplicates from an Array
+const removeDuplicate = (arr) => {
+  let newArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!newArr.includes(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+};
+const res5 = removeDuplicate([1, 2, 2, 3, 4, 4]);
+console.log(res5);
