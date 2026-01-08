@@ -70,4 +70,15 @@ const removeDuplicate = (arr) => {
   return newArr;
 };
 const res5 = removeDuplicate([1, 2, 2, 3, 4, 4]);
-console.log(res5);
+// console.log(res5);
+
+// problem-6 Sum of All Numbers in an Array
+const sumOfArr = (arr) => {
+  let sum = 0;
+  for (let item of arr) {
+    sum += item;
+  }
+  return sum;
+};
+const res6 = sumOfArr([1, 2, 3, 4]);
+console.log(res6);
