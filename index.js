@@ -94,4 +94,17 @@ const findEven = (arr) => {
   return even;
 };
 const res7 = findEven([1, 2, 3, 4, 5, 6]);
-console.log(res7);
+// console.log(res7);
+
+// Problem-8 ==> Capitalize First Letter of Each Word
+
+const capitalize = (sentence) => {
+  const words = sentence.toLowerCase().split(" ");
+  const capWords = words.map(
+    (word) => word.charAt(0).toUpperCase() + word.slice(1)
+  );
+  const result = capWords.join(" ");
+  return result;
+};
+const res8 = capitalize("hello programming hero");
+console.log(res8);
