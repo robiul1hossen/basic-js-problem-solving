@@ -107,4 +107,15 @@ const capitalize = (sentence) => {
   return result;
 };
 const res8 = capitalize("hello programming hero");
-console.log(res8);
+// console.log(res8);
+
+// Problem-9 ==> Find the Factorial of a Number
+const factorial = (num) => {
+  let result = 1;
+  for (let i = 1; i <= num; i++) {
+    result = result * i;
+  }
+  return result;
+};
+const res9 = factorial(5);
+console.log(res9);
