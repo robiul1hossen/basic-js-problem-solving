@@ -8,4 +8,25 @@ const reverseString = (str) => {
   return reverse;
 };
 const res1 = reverseString("hello");
-console.log(res1);
+// console.log(res1);
+
+// problem-2 ==>  Count Vowels in a String
+const vowelsCount = (word) => {
+  word = word.toLowerCase();
+  let totalVowels = 0;
+  for (let i = 0; i < word.length; i++) {
+    let findVowel = word[i];
+    if (
+      findVowel === "a" ||
+      findVowel === "e" ||
+      findVowel === "i" ||
+      findVowel === "o" ||
+      findVowel === "u"
+    ) {
+      totalVowels++;
+    }
+  }
+  return totalVowels;
+};
+const res2 = vowelsCount("programming");
+console.log(res2);
